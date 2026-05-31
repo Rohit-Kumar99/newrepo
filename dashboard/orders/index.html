@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <title>Orders</title>
 </head>
 <body>
-    <aside>     
+    <div class="container">
+        <aside>     
             <div class="top">
                 <div class="logo">
-                    <img src="../assets/images/logo.png" alt="">
+                    <img src="../../assets/images/logo.png" alt="">
                     <h2>EGA<span class="danger">TOR</span></h2>
                 </div>
 
@@ -21,19 +24,19 @@
             </div>
 
             <div class="sidebar">
-                <a href="../dashboard/ecom/index.html">
+                <a href="../ecom/index.html">
                     <span class="material-icons-sharp">home</span>
                     <h3>Home</h3>
                 </a>
-                <a href="#" class="active">
+                <a href="../index.html">
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#">
+                <a href="../customers/index.html">
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>Customers</h3>
                 </a>
-                <a href="#">
+                <a href="index.html" class="active">
                     <span class="material-icons-sharp">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
@@ -70,5 +73,244 @@
             </div>
 
         </aside>
+        
+        <main>
+             <div class="orders-header">
+                <h1>Orders</h1>
+            </div>
+
+            <div class="orders-stats">
+
+                <div class="stat-card">
+                    <span class="material-icons-sharp">assessment</span>
+                    <div>
+                        <h3>Total Orders</h3>
+                        <h1>8200</h1>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="material-icons-sharp">pending</span>
+                    <div>
+                        <h3>Pending Orders</h3>
+                        <h1>150</h1>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="material-icons-sharp">done</span>
+                    <div>
+                        <h3>Completed Orders</h3>
+                        <h1>8000</h1>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="material-icons-sharp">cancel</span>
+                    <div>
+                        <h3>Cancelled Orders</h3>
+                        <h1>50</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="orders-table">
+                <h2>Orders Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cust_Name</th>
+                            <th>Prod_Name</th>
+                            <th>Order ID</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>John Carter</td>
+                            <td>Gaming PC</td>
+                            <td>#001122</td>
+                            <td>$1000</td>
+                            <td>1/6/26</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">View</td>
+                        </tr>
+
+                        <tr>
+                            <td>Emma Watson</td>
+                            <td>Make Up kit</td>
+                            <td>#001133</td>
+                            <td>$200</td>
+                            <td>20/5/26</td>
+                            <td class="danger">Declined</td>
+                            <td class="primary">View</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mike Tyson</td>
+                            <td>Boxing Bag</td>
+                            <td>#001144</td>
+                            <td>$10000</td>
+                            <td>1/1/26</td>
+                            <td class="success">Delivered</td>
+                            <td class="primary">View</td>
+                        </tr>
+
+                        <tr>
+                            <td>Michael</td>
+                            <td>Laptop</td>
+                            <td>#001155</td>
+                            <td>$2000</td>
+                            <td>8/2/26</td>
+                            <td class="primary">Shipped</td>
+                            <td class="primary">View</td>
+                        </tr>
+                        <!-- =======END OF TABLE======== -->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+
+                <h2>Recent Orders</h2>
+
+                <div class="updates">
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-4.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>Emma</b> Purchased a Make Up Kit
+                            </p>
+
+                            <small class="text-muted">
+                                2 Minutes Ago
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-2.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>Mike</b> purchased a Boxing Bag
+                            </p>
+
+                            <small class="text-muted">
+                                10 Minutes Ago
+                            </small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-1.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>John</b> purchased a Gaming PC
+                            </p>
+
+                            <small class="text-muted">
+                                 1 Hour Ago
+                            </small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="top-orders">
+                <h2>Top Orders</h2>
+                <div class="item order1">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-1.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Gaming Mouse</h3>
+                        </div>
+                        <h5 class="success">80%</h5>
+                        <h3>$3000</h3>
+                    </div>
+                </div>
+                <div class="item order2">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-2.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Beauty Items</h3>
+                        </div>
+                        <h5 class="success">70%</h5>
+                        <h3>$1100</h3>
+                    </div>
+                </div>
+                <div class="item order3">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-3.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Kid Toys</h3>
+                        </div>
+                        <h5 class="success">90%</h5>
+                        <h3>$10000</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Create Order</h3>
+                    </div>
+                </div>
+             </div>
+
+        </div>
+
+    </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

@@ -19,7 +19,6 @@ const currentTheme = localStorage.getItem('theme');
 if(currentTheme === 'dark-theme-variables'){
     document.body.classList.add('dark-theme-variables');
     menuBtn.style.color = "var(--primary-color)";
-    
 
     themeToggler.querySelector('span:nth-child(1)').classList.remove('active');
     themeToggler.querySelector('span:nth-child(2)').classList.add('active');

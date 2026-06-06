@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Orders</title>
+    <title>Products</title>
 </head>
 <body>
     <div class="container">
@@ -36,7 +36,7 @@
                     <span class="material-icons-sharp">person_outline</span>
                     <h3>Customers</h3>
                 </a>
-                <a href="index.html" class="active">
+                <a href="index.html">
                     <span class="material-icons-sharp">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
@@ -49,7 +49,7 @@
                     <h3>Messages</h3>
                     <span class="message-count">26</span>
                 </a>
-                <a href="../products/index.html">
+                <a href="#" class="active">
                     <span class="material-icons-sharp">inventory</span>
                     <h3>Products</h3>
                 </a>
@@ -75,99 +75,99 @@
         </aside>
         
         <main>
-             <div class="orders-header">
-                <h1>Orders</h1>
+             <div class="products-header">
+                <h1>Products</h1>
             </div>
 
-            <div class="orders-stats">
+            <div class="products-stats">
 
                 <div class="stat-card">
                     <span class="material-icons-sharp">assessment</span>
                     <div>
-                        <h3>Total Orders</h3>
-                        <h1>8200</h1>
+                        <h3>Total Products</h3>
+                        <h1>500</h1>
                     </div>
                 </div>
 
                 <div class="stat-card">
-                    <span class="material-icons-sharp">pending</span>
+                    <span class="material-icons-sharp">trending_up</span>
                     <div>
-                        <h3>Pending Orders</h3>
-                        <h1>150</h1>
+                        <h3>Trending Products</h3>
+                        <h1>250</h1>
                     </div>
                 </div>
 
                 <div class="stat-card">
-                    <span class="material-icons-sharp">done</span>
+                    <span class="material-icons-sharp">trending_down</span>
                     <div>
-                        <h3>Completed Orders</h3>
-                        <h1>8000</h1>
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <span class="material-icons-sharp">cancel</span>
-                    <div>
-                        <h3>Cancelled Orders</h3>
+                        <h3>Flopped Products</h3>
                         <h1>50</h1>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="material-icons-sharp">local_mall</span>
+                    <div>
+                        <h3>New Products</h3>
+                        <h1>200</h1>
                     </div>
                 </div>
 
             </div>
 
-            <div class="orders-table">
-                <h2>Orders Table</h2>
+            <div class="products-table">
+                <h2>Products Table</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Cust_Name</th>
-                            <th>Prod_Name</th>
-                            <th>Order ID</th>
-                            <th>Amount</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Actions</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th>Sold</th>
+                            <th>Price</th>
+                            <th>Status</th> 
+                            <th>Action</th> 
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td>John Carter</td>
-                            <td>Gaming PC</td>
-                            <td>#001122</td>
-                            <td>$1000</td>
-                            <td>1/6/26</td>
-                            <td class="warning">Pending</td>
+                            <td>Gaming Mouse</td>
+                            <td>Accessories</td>
+                            <td>300</td>
+                            <td>200</td>
+                            <td>$80</td>
+                            <td class="success">Top Performing</td>
                             <td class="primary">View</td>
                         </tr>
 
                         <tr>
-                            <td>Emma Watson</td>
-                            <td>Make Up kit</td>
-                            <td>#001133</td>
-                            <td>$200</td>
-                            <td>20/5/26</td>
-                            <td class="danger">Declined</td>
+                            <td>Make Up Kit</td>
+                            <td>Beauty</td>
+                            <td>500</td>
+                            <td>350</td>
+                            <td>$110</td>
+                            <td class="warning">Average</td>
                             <td class="primary">View</td>
                         </tr>
 
                         <tr>
-                            <td>Mike Tyson</td>
                             <td>Boxing Bag</td>
-                            <td>#001144</td>
-                            <td>$10000</td>
-                            <td>1/1/26</td>
-                            <td class="success">Delivered</td>
+                            <td>Sports</td>
+                            <td>200</td>
+                            <td>50</td>
+                            <td>$150</td>
+                            <td class="danger">Flopped</td>
                             <td class="primary">View</td>
                         </tr>
 
                         <tr>
-                            <td>Michael</td>
-                            <td>Laptop</td>
-                            <td>#001155</td>
-                            <td>$2000</td>
-                            <td>8/2/26</td>
-                            <td class="primary">Shipped</td>
+                            <td>Kids Toys</td>
+                            <td> Toys</td>
+                            <td>1000</td>
+                            <td>900</td>
+                            <td>$100</td>
+                            <td class="success">Super Hit</td>
                             <td class="primary">View</td>
                         </tr>
                         <!-- =======END OF TABLE======== -->
@@ -198,11 +198,27 @@
                 </div>
             </div>
 
-            <div class="recent-orders">
+            <div class="recent-activity">
 
-                <h2>Recent Orders</h2>
+                <h2>Recent Activity</h2>
 
                 <div class="updates">
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-1.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>John</b> purchased a Gaming laptop
+                            </p>
+
+                            <small class="text-muted">
+                                 30 minutes Ago
+                            </small>
+                        </div>
+                    </div>
 
                     <div class="update">
                         <div class="profile-photo">
@@ -211,11 +227,11 @@
 
                         <div class="message">
                             <p>
-                                <b>Emma</b> Purchased a Make Up Kit
+                                <b>Emma</b> Purchased a Hair Dryer
                             </p>
 
                             <small class="text-muted">
-                                2 Minutes Ago
+                                1 Minute Ago
                             </small>
                         </div>
                     </div>
@@ -227,37 +243,23 @@
 
                         <div class="message">
                             <p>
-                                <b>Mike</b> purchased a Boxing Bag
+                                <b>Mike</b> is viewing a Boxing kit
                             </p>
 
                             <small class="text-muted">
-                                10 Minutes Ago
+                                Viewing Product
                             </small>
                         </div>
                     </div>
-                    <div class="update">
-                        <div class="profile-photo">
-                            <img src="../../assets/images/profile-1.jpg">
-                        </div>
 
-                        <div class="message">
-                            <p>
-                                <b>John</b> purchased a Gaming PC
-                            </p>
-
-                            <small class="text-muted">
-                                 1 Hour Ago
-                            </small>
-                        </div>
-                    </div>
 
                 </div>
 
             </div>
 
-            <div class="top-orders">
-                <h2>Top Orders</h2>
-                <div class="item order1">
+            <div class="top-products">
+                <h2>Top Products</h2>
+                <div class="item product1">
                     <!-- <div class="icon">
                         <span class="profile-photo">
                             <img src="../../assets/images/profile-1.jpg" alt="Customer">
@@ -267,11 +269,11 @@
                         <div class="info">
                             <h3>Gaming Mouse</h3>
                         </div>
-                        <h5 class="success">80%</h5>
-                        <h3>$3000</h3>
+                        <h5 class="success">90%</h5>
+                        <h3>$800</h3>
                     </div>
                 </div>
-                <div class="item order2">
+                <div class="item product2">
                     <!-- <div class="icon">
                         <span class="profile-photo">
                             <img src="../../assets/images/profile-2.jpg" alt="Customer">
@@ -279,13 +281,13 @@
                     </div> -->
                     <div class="right">
                         <div class="info">
-                            <h3>Beauty Items</h3>
+                            <h3>Toys</h3>
                         </div>
-                        <h5 class="success">70%</h5>
+                        <h5 class="success">95%</h5>
                         <h3>$1100</h3>
                     </div>
                 </div>
-                <div class="item order3">
+                <div class="item product3">
                     <!-- <div class="icon">
                         <span class="profile-photo">
                             <img src="../../assets/images/profile-3.jpg" alt="Customer">
@@ -293,16 +295,16 @@
                     </div> -->
                     <div class="right">
                         <div class="info">
-                            <h3>Kid Toys</h3>
+                            <h3>Beauty Items</h3>
                         </div>
-                        <h5 class="success">90%</h5>
-                        <h3>$10000</h3>
+                        <h5 class="success">70%</h5>
+                        <h3>$700</h3>
                     </div>
                 </div>
                 <div class="item add-product">
                     <div>
                         <span class="material-icons-sharp">add</span>
-                        <h3>Create Order</h3>
+                        <h3>Add Product</h3>
                     </div>
                 </div>
              </div>

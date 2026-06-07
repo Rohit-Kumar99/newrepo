@@ -1,11 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Messages</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../../assets/images/logo.png" alt="">
+                    <h2>EGA<span class="danger">TOR</span></h2>
+                </div>
+
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../ecom/index.html">
+                    <span class="material-icons-sharp">home</span>
+                    <h3>Home</h3>
+                </a>
+                <a href="../index.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="../customers/index.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="../orders/index.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="../analytics/index.html">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="../products/index.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="../reports/index.html">
+                    <!-- <span class="material-icons-sharp">report_gmailerrored</span> -->
+                    <span class="material-icons-sharp">report</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="../settingss/index.html">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="../addproduct/index.html">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="../../login/index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+
+        </aside>
+
+        <main>
+            <div class="message-header">
+                <h1>Messages</h1>
+                <small class="text-muted">Communicate with your Customers</small>
+            </div>
+
+            <div class="messages-stats">
+
+                <div class="message-card">
+                    <span class="material-icons-sharp">groups</span>
+                    <div>
+                        <h3>Total Messages</h3>
+                        <h1>500</h1>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <span class="material-icons-sharp">verified_user</span>
+                    <div>
+                        <h3>Online Users</h3>
+                        <h1>200</h1>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <span class="material-icons-sharp">wifi_off</span>
+                    <div>
+                        <h3>Offline Users</h3>
+                        <h1>100</h1>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <span class="material-icons-sharp">block</span>
+                    <div>
+                        <h3>Blocked Users</h3>
+                        <h1>200</h1>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="message-conversations">
+                <h2>Conversation</h2>
+                <div class="message-layout">
+                    <div class="message-head">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="../../assets/images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>John Doe</h3>
+                                <small class="text-muted success">Online</small>
+                            </div>
+                        </div>
+
+                        <div class="message-icons">
+                            <span class="material-icons-sharp">call</span>
+                            <span class="material-icons-sharp">video_call</span>
+                            <span class="material-icons-sharp">more_vert</span>
+                        </div>
+                    </div>
+
+                    <div class="message-body">
+                        <small class="text-muted line">Today</small>
+                        <div class="message-content received">
+                            <p>Hey, when will my order arrive ?</p>
+                            <small class="text-muted">10:30 a.m.</small>
+                        </div>
+
+                        <div class="message-content sent">
+                            <p>Hello, Your order #659012has been shipped. You will receive it by 10 july</p>
+                            <small class="text-muted">10:32 a.m.</small>
+                        </div>
+
+                        <div class="message-content received">
+                            <p>Great, Thank you so much</p>
+                            <small class="text-muted">10:35 a.m.</small>
+                            <small class="like">👍</small>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+
+                <h2>Recent Activity</h2>
+
+                <div class="updates">
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-1.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>John</b> purchased a Gaming laptop
+                            </p>
+
+                            <small class="text-muted">
+                                30 minutes Ago
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-4.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>Emma</b> Purchased a Hair Dryer
+                            </p>
+
+                            <small class="text-muted">
+                                1 Minute Ago
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../../assets/images/profile-2.jpg">
+                        </div>
+
+                        <div class="message">
+                            <p>
+                                <b>Mike</b> is viewing a Boxing kit
+                            </p>
+
+                            <small class="text-muted">
+                                Viewing Product
+                            </small>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="top-products">
+                <h2>Top Products</h2>
+                <div class="item product1">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-1.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Gaming Mouse</h3>
+                        </div>
+                        <h5 class="success">90%</h5>
+                        <h3>$800</h3>
+                    </div>
+                </div>
+                <div class="item product2">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-2.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Toys</h3>
+                        </div>
+                        <h5 class="success">95%</h5>
+                        <h3>$1100</h3>
+                    </div>
+                </div>
+                <div class="item product3">
+                    <!-- <div class="icon">
+                        <span class="profile-photo">
+                            <img src="../../assets/images/profile-3.jpg" alt="Customer">
+                        </span>
+                    </div> -->
+                    <div class="right">
+                        <div class="info">
+                            <h3>Beauty Items</h3>
+                        </div>
+                        <h5 class="success">70%</h5>
+                        <h3>$700</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

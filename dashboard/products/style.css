@@ -453,8 +453,8 @@ main .products-table a {
     .container{
         width: 94%;
         /* grid-template-columns: 7rem auto 23rem; */
-        /* grid-template-columns: 7rem 25rem auto; */
-        grid-template-columns: 7rem auto auto;
+        grid-template-columns: 7rem 25rem auto;
+        /* grid-template-columns: 7rem auto auto; */
     }
 
     aside .logo h2{
@@ -488,7 +488,8 @@ main .products-table a {
     }
 
     main .products-table table{
-        width: 82vh;
+        margin-top:2.5rem;
+        width: 82vw;
     }
 
     main table thead tr th:nth-child(5), 

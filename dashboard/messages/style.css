@@ -377,6 +377,44 @@ main .message-conversations a {
     margin-bottom:0.5rem;
 }
 
+.update .message{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+    
+}
+
+.left-message{
+    flex:1;
+}
+
+.right-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.2rem;
+}
+
+.right-message h6{
+    background:green;
+    color: white;
+    padding: 3px 5px;
+    border-radius:50%
+}
+
+.active-chat{
+    background:#f5f7ff;
+    border-left:2px solid #4f46e5;
+    color:#333;
+}
+
+.active-chat .right-message h6{
+    background:#4f46e5;
+    color:#fff;
+}
+
+
 .right .top{
     display: flex;
     justify-content: end;
@@ -420,16 +458,16 @@ main .message-conversations a {
     text-align: center;
 }
 
-.right .top-products{
+.right .quick-actions{
     margin-top: 1rem;
 }
 
-.right .top-products h2{
+.right .quick-actions h2{
     margin-bottom: 0.8rem;
     text-align: center;
 }
 
-.right .top-products .item{
+.right .quick-actions .item{
     background: var(--color-white);
     display: flex;
     align-items: center;
@@ -441,19 +479,28 @@ main .message-conversations a {
     transition: all 300ms ease;
 }
 
-.right .top-products .item:hover{
+.right .quick-actions .item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border:2px solid transparent;
+    border-radius: 50%;
+}
+
+.right .quick-actions .item:hover{
     box-shadow: none;
 }
 
-.right .top-products .item .right{
+.right .quick-actions .item.resolve{
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin:0;
-    width: 100%;
+    background: var(--color-success);
+    color: var(--color-white);
+    text-align: center;
 }
 
-.right .top-products .item .icon{
+.right .quick-actions .item .icon{
     padding: 0.5rem;
     color: var(--color-white);
     border-radius: 50%;
@@ -461,15 +508,15 @@ main .message-conversations a {
    display: flex;
 }
 
-.right .top-products .item.offline .icon{
+.right .quick-actions .item.blocked{
     background: var(--color-danger);
 }
 
-.right .top-products .item.customers .icon{
-    background: var(--color-success);
+.right .quick-actions .item.view-profile{
+    background: var(--color-primary);
 }
 
-.right .top-products .add-product{
+.right .quick-actions .create-message{
     background: transparent;
     border: 2px dashed var(--color-primary);
     color: var(--color-primary);
@@ -478,18 +525,18 @@ main .message-conversations a {
     justify-content: center;
 }
 
-.right .top-products .add-product:hover{
+.right .quick-actions .create-message:hover{
     background: var(--color-primary);
     color: white;
 }
 
-.right .top-products .add-product div{
+.right .quick-actions .create-message div{
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
 
-.right .top-products .add-product div h3{
+.right .quick-actions .create-message div h3{
     font-weight: 500;
 }
 

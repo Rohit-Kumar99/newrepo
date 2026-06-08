@@ -66,7 +66,7 @@ body{
     width: 100%;
     margin: 0 auto;
     /* grid-template-columns: 14rem auto 23rem; */
-    grid-template-columns: 11rem auto 22rem;
+    grid-template-columns: 11rem 60% 22rem;
     gap: 1rem;
 }
 
@@ -357,7 +357,7 @@ main .message-conversations a {
 
 .right{
     margin-top:1.4rem;
-     margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
 }
 
 .recent-activity h2{
@@ -546,8 +546,8 @@ main .message-conversations a {
     .container{
         width: 94%;
         /* grid-template-columns: 7rem auto 23rem; */
-        grid-template-columns: 7rem 25rem auto;
-        /* grid-template-columns: 7rem auto auto; */
+        /* grid-template-columns: 7rem 25rem auto; */
+        grid-template-columns: 7rem auto auto;
     }
 
     aside .logo h2{
@@ -567,33 +567,12 @@ main .message-conversations a {
         margin-top: 1.8rem;
     }
 
-    main .products-stats{
+    main .messages-stats{
         grid-template-columns:1fr;
         gap: 0.5rem;
     }
 
-    .main .products-table{
-        width:94%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(50%);
-        margin: 2rem 0 0 8.5rem;
-    }
 
-    main .products-table table{
-        margin-top:2.5rem;
-        width: 82vw;
-    }
-
-    main table thead tr th:nth-child(5), 
-    main table thead tr th:nth-child(7){
-        display: none;
-    }
-
-    main table tbody tr td:nth-child(5), 
-    main table tbody tr td:nth-child(7){
-        display: none;
-    }
 }
    
 /* MEDIA QUERIES FOR SMALL DEVICES */
@@ -654,19 +633,8 @@ main .message-conversations a {
         padding:0 1rem;
     }
 
-    main .products-header{
+    main .message{
         text-align: center;
-    }
-
-    main .products-table{
-        position: relative;
-        margin: 3rem 0 0 0;
-        width: 100%;
-    }
-
-    main .products-table table{
-        width: 100%;
-        margin: 0;
     }
 
     .right{

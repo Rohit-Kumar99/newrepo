@@ -1,11 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytics Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../../assets/images/logo.png" alt="">
+                    <h2>EGA<span class="danger">TOR</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../ecom/index.html">
+                    <span class="material-icons-sharp">home</span>
+                    <h3>Home</h3>
+                </a>
+                <a href="../index.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="../customers/index.html">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="../orders/index.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="../messages/index.html">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="../products/index.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="../reports/index.html">
+                    <span class="material-icons-sharp">report</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="../settingss/index.html">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="../addproduct/index.html">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="../../login/index.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- MAIN SECTION -->
+        <main>
+            <div class="analyse">
+
+                <!-- Revenue Overview -->
+                <div class="sales analytics-card">
+                    <div class="card-header">
+                        <h2>Revenue Overview</h2>
+                        <select class="period-select">
+                            <option>This Week</option>
+                            <option>This Month</option>
+                            <option>This Year</option>
+                        </select>
+                    </div>
+                    <div class="chart-legend">
+                        <span class="legend-item"><span class="legend-dot primary-dot"></span> Revenue</span>
+                        <span class="legend-item"><span class="legend-dot muted-dot"></span> Previous Period</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Top Products -->
+                <div class="top-products analytics-card">
+                    <div class="card-header">
+                        <h2>Top Products</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Orders</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <div class="product-icon laptop-icon">
+                                            <span class="material-icons-sharp">laptop</span>
+                                        </div>
+                                        <span>Gaming Laptop</span>
+                                    </div>
+                                </td>
+                                <td>540</td>
+                                <td class="success">$67,500</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <div class="product-icon mouse-icon">
+                                            <span class="material-icons-sharp">mouse</span>
+                                        </div>
+                                        <span>Wireless Mouse</span>
+                                    </div>
+                                </td>
+                                <td>420</td>
+                                <td class="success">$18,900</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <div class="product-icon keyboard-icon">
+                                            <span class="material-icons-sharp">keyboard</span>
+                                        </div>
+                                        <span>Mech. Keyboard</span>
+                                    </div>
+                                </td>
+                                <td>380</td>
+                                <td class="success">$15,200</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <div class="product-icon headset-icon">
+                                            <span class="material-icons-sharp">headset</span>
+                                        </div>
+                                        <span>Gaming Headset</span>
+                                    </div>
+                                </td>
+                                <td>310</td>
+                                <td class="success">$9,300</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="product-info">
+                                        <div class="product-icon monitor-icon">
+                                            <span class="material-icons-sharp">monitor</span>
+                                        </div>
+                                        <span>Monitor 27"</span>
+                                    </div>
+                                </td>
+                                <td>280</td>
+                                <td class="success">$13,680</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Customer Growth -->
+                <div class="customer-growth analytics-card">
+                    <div class="card-header">
+                        <h2>Customer Growth</h2>
+                        <select class="period-select">
+                            <option>This Week</option>
+                            <option>This Month</option>
+                        </select>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="customerChart"></canvas>
+                    </div>
+                    <div class="growth-stats">
+                        <div class="growth-stat">
+                            <div class="stat-icon new-icon">
+                                <span class="material-icons-sharp">person_add</span>
+                            </div>
+                            <div class="stat-info">
+                                <small>New Customers</small>
+                                <h3>312</h3>
+                                <span class="trend up"><span class="material-icons-sharp">arrow_upward</span>9.4%</span>
+                            </div>
+                        </div>
+                        <div class="growth-stat">
+                            <div class="stat-icon returning-icon">
+                                <span class="material-icons-sharp">autorenew</span>
+                            </div>
+                            <div class="stat-info">
+                                <small>Returning Customers</small>
+                                <h3>1,614</h3>
+                                <span class="trend up"><span class="material-icons-sharp">arrow_upward</span>5.7%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Metrics Summary - Vertical -->
+            <div class="key-metrics">
+                <div class="metrics-header">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <h2>Key Metrics Summary</h2>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon aov-icon">
+                        <span class="material-icons-sharp">attach_money</span>
+                    </div>
+                    <div class="metric-body">
+                        <small>Average Order Value</small>
+                        <h2>$43.78</h2>
+                        <div class="metric-footer">
+                            <span class="trend up"><span class="material-icons-sharp">arrow_upward</span>7.2%</span>
+                            <span class="metric-bar-wrap"><span class="metric-bar" style="width:72%; background:var(--color-primary)"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon conv-icon">
+                        <span class="material-icons-sharp">swap_horiz</span>
+                    </div>
+                    <div class="metric-body">
+                        <small>Conversion Rate</small>
+                        <h2>3.24%</h2>
+                        <div class="metric-footer">
+                            <span class="trend up"><span class="material-icons-sharp">arrow_upward</span>0.8%</span>
+                            <span class="metric-bar-wrap"><span class="metric-bar" style="width:32%; background:var(--color-success)"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon refund-icon">
+                        <span class="material-icons-sharp">replay</span>
+                    </div>
+                    <div class="metric-body">
+                        <small>Refund Rate</small>
+                        <h2>1.18%</h2>
+                        <div class="metric-footer">
+                            <span class="trend down"><span class="material-icons-sharp">arrow_downward</span>0.3%</span>
+                            <span class="metric-bar-wrap"><span class="metric-bar" style="width:12%; background:var(--color-danger)"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon retention-icon">
+                        <span class="material-icons-sharp">loyalty</span>
+                    </div>
+                    <div class="metric-body">
+                        <small>Customer Retention</small>
+                        <h2>68.5%</h2>
+                        <div class="metric-footer">
+                            <span class="trend up"><span class="material-icons-sharp">arrow_upward</span>4.6%</span>
+                            <span class="metric-bar-wrap"><span class="metric-bar" style="width:68%; background:var(--color-warning)"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

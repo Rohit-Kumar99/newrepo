@@ -1,12 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Reports</title>
 </head>
+
 <body>
-    <h1>Reports Page</h1>
-    <p>This is the reports page. You can add your report content here.</p>
+    <div class="container">
+        <section id="sidebaar">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="../../assets/images/logo.png" alt="">
+                        <h2>EGA<span class="danger">TOR</span></h2>
+                    </div>
+
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="../ecom/index.html">
+                        <span class="material-icons-sharp">home</span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="../index.html">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="../customers/index.html">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Customers</h3>
+                    </a>
+                    <a href="../orders/index.html">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Orders</h3>
+                    </a>
+                    <a href="../analytics/index.html">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="../messages/index.html">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="../products/index.html">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3>Products</h3>
+                    </a>
+                    <a href="#" class="active">
+                        <!-- <span class="material-icons-sharp">report_gmailerrored</span> -->
+                        <span class="material-icons-sharp">report</span>
+                        <h3>Reports</h3>
+                    </a>
+                    <a href="../settings/index.html">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="../addproduct/index.html">
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </a>
+                    <a href="../../login/index.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+
+            </aside>
+        </section>
+
+        <main>
+
+            <div class="reports-header">
+                <div class="left-info">
+                    <h1>Reports</h1>
+                    <small class="text-muted">Generate, View & Download your business Reports</small>
+                </div>
+
+                <div class="right-info">
+                    <div class="date">
+                        <select>
+                            <option value="last7days">Last 7 Days</option>
+                            <option value="last30days">Last 30 Days</option>
+                            <option value="last6months">Last 6 Months</option>
+                            <option value="lastyear">Last Year</option>
+                        </select>
+                    </div>
+                    <button class="generate-btn">
+                        <span class="material-icons-sharp">add</span>
+                        Generate Report
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="reports-stats">
+
+                <div class="report-card">
+                    <span class="material-icons-sharp">assignment</span>
+                    <div>
+                        <h3>Total Reports</h3>
+                        <h1>248</h1>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <span class="material-icons-sharp">assignment_turned_in</span>
+                    <div>
+                        <h3>Generated Reports</h3>
+                        <h1>194</h1>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <span class="material-icons-sharp">pending</span>
+                    <div>
+                        <h3>Pending reports</h3>
+                        <h1>23</h1>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <span class="material-icons-sharp">archive</span>
+                    <div>
+                        <h3>Archived reports</h3>
+                        <h1>31</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reports-table">
+
+                <h2>Reports Table</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Report Name</th>
+                            <th>Type</th>
+                            <th>Created On</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="report-name">
+                                    <div class="report-logo">
+                                        <span class="material-icons-sharp">trending_up</span>
+                                    </div>
+
+                                    <div>
+                                        <h3>Monthly Sales Report</h3>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="pdf">PDF</div>
+                            </td>
+                            <td>10/6/26 7:00 PM</td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td class="action">
+                                <button class="download-btn">
+                                    <span class="material-icons-sharp">arrow_downward</span>
+                                    Download
+                                </button>
+                                <span class="material-icons-sharp dots">more_vert</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="report-name">
+                                    <div class="report-logo">
+                                        <span class="material-icons-sharp">person</span>
+                                    </div>
+
+                                    <div>
+                                        <h3>Customers Growth Report</h3>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="xlsx">XLSX</div>
+                            </td>
+                            <td>13/4/26 1:05 PM</td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td class="action">
+                                <button class="download-btn">
+                                    <span class="material-icons-sharp">arrow_downward</span>
+                                    Download
+                                </button>
+                                <span class="material-icons-sharp dots">more_vert</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="report-name">
+                                    <div class="report-logo">
+                                        <span class="material-icons-sharp">report</span>
+                                    </div>
+
+                                    <div>
+                                        <h3>Product Performance Report</h3>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="xlsx">XLSX</div>
+                            </td>
+                            <td>25/1/26 3:00 PM</td>
+
+                            <td>
+                                <span class="status processing">
+                                    Processing
+                                </span>
+                            </td>
+
+                            <td class="action">
+                                <button class="download-btn">
+                                    <span class="material-icons-sharp">arrow_downward</span>
+                                    Download
+                                </button>
+                                <span class="material-icons-sharp dots">more_vert</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="report-name">
+                                    <div class="report-logo">
+                                        <span class="material-icons-sharp">attach_money</span>
+                                    </div>
+
+                                    <div>
+                                        <h3>Revenue Analysis Report</h3>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="csv">CSV</div>
+                            </td>
+                            <td>10/6/26 9:00 PM</td>
+
+                            <td>
+                                <span class="status completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td class="action">
+                                <button class="download-btn">
+                                    <span class="material-icons-sharp">arrow_downward</span>
+                                    Download
+                                </button>
+                                <span class="material-icons-sharp dots">more_vert</span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reports-updates">
+
+                <h2>Report Activity</h2>
+
+                <div class="reports">
+
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">assignment</span>
+                        </div>
+
+                        <div class="message">
+                            <h3>Monthly Sales Report</h3>
+                            <p>Report generated Successfully</p>
+
+                            <small class="text-muted">
+                                2 Minutes Ago
+                            </small>
+                        </div>
+                        <div class="report-right">
+                            <span class="material-icons-sharp">fiber_manual_record</span>
+                        </div>
+                    </div>
+
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">assignment</span>
+                        </div>
+
+                        <div class="message">
+                            <h3>Customer Report</h3>
+                            <p>Exported as Excel</p>
+
+                            <small class="text-muted">
+                                15 Minutes Ago
+                            </small>
+                        </div>
+                        <div class="report-right">
+                            <span class="material-icons-sharp">fiber_manual_record</span>
+                        </div>
+                    </div>
+
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">picture_as_pdf</span>
+                        </div>
+
+                        <div class="message">
+                            <h3>Revenue Analysis Report</h3>
+                            <p>Report generated Successfully</p>
+
+                            <small class="text-muted">
+                                1 hour Ago
+                            </small>
+                        </div>
+                        <div class="report-right">
+                            <span class="material-icons-sharp">fiber_manual_record</span>
+                        </div>
+                    </div>
+
+
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">picture_as_pdf</span>
+                        </div>
+
+                        <div class="message">
+                            <h3>Order Summary Report</h3>
+                            <p>Exported as CSV</p>
+
+                            <small class="text-muted">
+                                2 hour Ago
+                            </small>
+                        </div>
+                        <div class="report-right">
+                            <span class="material-icons-sharp">fiber_manual_record</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="performance-summary">
+                <h2>Performance Summary</h2>
+
+                <div class="summary">
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">assignment</span>
+                        </div>
+
+                        <div class="message">
+                            <p>Top Selling Product</p>
+
+                            <small class="text-muted">
+                                this Month
+                            </small>
+                        </div>
+                        <div class="performance-right">
+                            <h3>Gaming Laptop</h3>
+                        </div>
+                    </div>
+
+                    
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">public</span>
+                        </div>
+
+                        <div class="message">
+                            <p>Top Region</p>
+
+                            <small class="text-muted">
+                                By Sales
+                            </small>
+                        </div>
+                        <div class="performance-right">
+                            <h3>North America</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="report">
+                        <div class="report-logo">
+                            <span class="material-icons-sharp">assignment</span>
+                        </div>
+
+                        <div class="message">
+                            <p>Top Customer Segment</p>
+
+                            <small class="text-muted">
+                                By Orders
+                            </small>
+                        </div>
+                        <div class="performance-right">
+                            <h3>New Customers</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

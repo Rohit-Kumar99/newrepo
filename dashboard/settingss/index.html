@@ -1,12 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Settings</title>
 </head>
+
 <body>
-    <h1>Settings Page</h1>
-    <p>This is the settings page. You can add your settings content here.</p>
+    <div class="container">
+        <section id="sidebaar">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="../../assets/images/logo.png" alt="">
+                        <h2>EGA<span class="danger">TOR</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="../ecom/index.html">
+                        <span class="material-icons-sharp">home</span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="../index.html">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="../customers/index.html">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Customers</h3>
+                    </a>
+                    <a href="../orders/index.html">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Orders</h3>
+                    </a>
+                    <a href="../analytics/index.html">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="../messages/index.html">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="../products/index.html">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3>Products</h3>
+                    </a>
+                    <a href="../reports/index.html">
+                        <span class="material-icons-sharp">report</span>
+                        <h3>Reports</h3>
+                    </a>
+                    <a href="#" class="active">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="../addproduct/index.html">
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </a>
+                    <a href="../../login/index.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+        </section>
+
+        <main>
+            <div class="settings-header">
+                <div class="left-info">
+                    <h1>Settings</h1>
+                    <small class="text-muted">Manage your account & Dashboard Preferences</small>
+                </div>
+            </div>
+
+            <!-- Profile Information Card -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Profile Information</h2>
+                        <p>Update your personal information and profile details</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="profile-section">
+                        <div class="photo-button">
+                            <img src="../../assets/images/profile-1.jpg" alt="profile">
+                            <button>Change Photo</button>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="John Doe" value="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john.doe@example.com" value="john.doe@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" placeholder="+1 234 567 8900" value="+1 234 567 8900">
+                            </div>
+                            <div class="form-group">
+                                <label>Role</label>
+                                <select>
+                                    <option selected>Administrator</option>
+                                    <option>Editor</option>
+                                    <option>Viewer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Settings Card -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo security">
+                        <span class="material-icons-sharp">lock</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Security Settings</h2>
+                        <p>Update your password to keep your account secure.</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-grid three-col">
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <div class="input-with-icon">
+                                <input type="password" placeholder="Enter current password">
+                                <span class="material-icons-sharp eye-icon">visibility</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <div class="input-with-icon">
+                                <input type="password" placeholder="Enter new password">
+                                <span class="material-icons-sharp eye-icon">visibility</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <div class="input-with-icon">
+                                <input type="password" placeholder="Confirm new password">
+                                <span class="material-icons-sharp eye-icon">visibility</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-primary">Update Password</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Preferences Card -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo dashboard">
+                        <span class="material-icons-sharp">tune</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Dashboard Preferences</h2>
+                        <p>Customize your dashboard experience.</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-grid four-col">
+                        <div class="form-group">
+                            <label>Theme</label>
+                            <select>
+                                <option>🌙 Dark</option>
+                                <option selected>☀️ Light</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Language</label>
+                            <select>
+                                <option selected>English</option>
+                                <option>Spanish</option>
+                                <option>French</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Timezone</label>
+                            <select>
+                                <option selected>UTC +5:00</option>
+                                <option>UTC +0:00</option>
+                                <option>UTC -5:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Date Format</label>
+                            <select>
+                                <option selected>DD MMM YYYY</option>
+                                <option>MM/DD/YYYY</option>
+                                <option>YYYY-MM-DD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- RIGHT SECTION -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Status -->
+            <div class="account-status">
+                <div class="status-header">
+                    <h3>Account Status</h3>
+                    <span class="badge-premium">Premium</span>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon plan-icon">
+                        <span class="material-icons-sharp">shield</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Plan</small>
+                        <p><b>Premium Account</b></p>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon calendar-icon">
+                        <span class="material-icons-sharp">calendar_today</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Active Since</small>
+                        <p><b>15 Jan 2024</b></p>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon storage-icon">
+                        <span class="material-icons-sharp">storage</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Storage Used</small>
+                        <p><b>78%</b></p>
+                        <div class="storage-bar">
+                            <div class="storage-fill" style="width:78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Changes -->
+            <div class="recent-changes">
+                <h3>Recent Changes</h3>
+
+                <div class="change-item">
+                    <div class="change-icon lock-icon">
+                        <span class="material-icons-sharp">lock</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Password Updated</b></p>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon theme-icon">
+                        <span class="material-icons-sharp">palette</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Theme Changed</b></p>
+                        <small class="text-muted">5 days ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon profile-icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Profile Updated</b></p>
+                        <small class="text-muted">1 week ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon email-icon">
+                        <span class="material-icons-sharp">email</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Email Updated</b></p>
+                        <small class="text-muted">2 weeks ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+
+                <div class="action-item">
+                    <div class="action-icon backup-icon">
+                        <span class="material-icons-sharp">backup</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Backup Settings</b></p>
+                        <small class="text-muted">Download a backup</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+
+                <div class="action-item">
+                    <div class="action-icon export-icon">
+                        <span class="material-icons-sharp">upload_file</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Export Data</b></p>
+                        <small class="text-muted">Export all your data</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+
+                <div class="action-item">
+                    <div class="action-icon reset-icon">
+                        <span class="material-icons-sharp">restart_alt</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Reset Preferences</b></p>
+                        <small class="text-muted">Reset to default settings</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

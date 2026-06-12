@@ -1,12 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Products</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Add Product</title>
 </head>
+
 <body>
-    <h1>Add Products</h1>
-    <p>This is the page for adding new products.</p>
+    <div class="container">
+        <section id="sidebaar">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="../../assets/images/logo.png" alt="">
+                        <h2>EGA<span class="danger">TOR</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="../ecom/index.html">
+                        <span class="material-icons-sharp">home</span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="../index.html">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="../customers/index.html">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3>Customers</h3>
+                    </a>
+                    <a href="../orders/index.html">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Orders</h3>
+                    </a>
+                    <a href="../analytics/index.html">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="../messages/index.html">
+                        <span class="material-icons-sharp">mail_outline</span>
+                        <h3>Messages</h3>
+                        <span class="message-count">26</span>
+                    </a>
+                    <a href="../products/index.html">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3>Products</h3>
+                    </a>
+                    <a href="../reports/index.html">
+                        <span class="material-icons-sharp">report</span>
+                        <h3>Reports</h3>
+                    </a>
+                    <a href="../settingss/index.html">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="#" class="active">
+                        <span class="material-icons-sharp">add</span>
+                        <h3>Add Product</h3>
+                    </a>
+                    <a href="../../login/index.html">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+        </section>
+
+        <main>
+            <div class="products-header">
+                <div class="left-info">
+                    <h1>Add Product</h1>
+                    <small class="text-muted">Add a new product to your store</small>
+                </div>
+            </div>
+
+            <!-- Product Information Card -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <span class="material-icons-sharp">shopping_bag</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Product Information</h2>
+                        <p>Basic details about your product</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="profile-section">
+                        <div class="form-grid three-col">
+                            <div class="form-group">
+                                <label>Product Name</label>
+                                <input type="text" placeholder="Gaming Laptop X15" value="Gaming Laptop X15">
+                            </div>
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select>
+                                    <option selected>Electronics</option>
+                                    <option>Clothes</option>
+                                    <option>Grocery</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Brand</label>
+                                <select>
+                                    <option selected>Asus</option>
+                                    <option>MSI</option>
+                                    <option>HP</option>
+                                    <option>Lenovo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>SKU Number</label>
+                                <input type="text" placeholder="SKU-1024-X15" value="SKU-1024-X15">
+                            </div>
+                            <div class="form-group">
+                                <label>Barcode (Optional)</label>
+                                <input type="text" placeholder="9034563310" value="9034563310">
+                            </div>
+                            <div class="form-group">
+                                <label>Product Tag</label>
+                                <input type="text" placeholder="Gaming, Laptop, High Performance"
+                                    value="Gaming, Laptop, High Performance">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price & Inventory Card -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <span class="material-icons-sharp">add_card</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Price & Inventory</h2>
+                        <p>Set Pricing and Manage Inventory.</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-grid four-col">
+                        <div class="form-group">
+                            <label>Price ($)</label>
+                            <input type="text" placeholder="1499.00">
+                            <!-- <span class="material-icons-sharp eye-icon">visibility</span> -->
+
+                        </div>
+                        <div class="form-group">
+                            <label>Discount Price ($)</label>
+
+                            <input type="text" placeholder="1299.00">
+                        </div>
+                        <div class="form-group">
+                            <label>Stock Quantity</label>
+
+                            <input type="text" placeholder="150">
+
+                        </div>
+                        <div class="form-group">
+                            <label>Availability</label>
+                            <select>
+                                <option selected>In Stock</option>
+                                <option>Oiut of Stock</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Upload & Preview Card -->
+            <div class="cards form-grid">
+                <div class="product-upload">
+                    <div class="card-header">
+                        <div class="header-data">
+                            <h2>Product Image </h2>
+                            <p>Upload a high quality product image.</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-logo">
+                            <span class="material-icons-sharp">cloud_upload</span>
+                        </div>
+                        <div class="upload-info">
+                            <h4>Drag & Drop an Image Here</h4>
+                            <small class="text-muted">or</small>
+                            <div class="upload-button">
+                                <button class="btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <!-- RIGHT SECTION -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>John</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../../assets/images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Status -->
+            <div class="account-status">
+                <div class="status-header">
+                    <h3>Account Status</h3>
+                    <span class="badge-premium">Premium</span>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon plan-icon">
+                        <span class="material-icons-sharp">shield</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Plan</small>
+                        <p><b>Premium Account</b></p>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon calendar-icon">
+                        <span class="material-icons-sharp">calendar_today</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Active Since</small>
+                        <p><b>15 Jan 2024</b></p>
+                    </div>
+                </div>
+
+                <div class="status-item">
+                    <div class="status-icon storage-icon">
+                        <span class="material-icons-sharp">storage</span>
+                    </div>
+                    <div class="status-info">
+                        <small class="text-muted">Storage Used</small>
+                        <p><b>78%</b></p>
+                        <div class="storage-bar">
+                            <div class="storage-fill" style="width:78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Changes -->
+            <div class="recent-changes">
+                <h3>Recent Changes</h3>
+
+                <div class="change-item">
+                    <div class="change-icon lock-icon">
+                        <span class="material-icons-sharp">lock</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Password Updated</b></p>
+                        <small class="text-muted">2 days ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon theme-icon">
+                        <span class="material-icons-sharp">palette</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Theme Changed</b></p>
+                        <small class="text-muted">5 days ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon profile-icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Profile Updated</b></p>
+                        <small class="text-muted">1 week ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+
+                <div class="change-item">
+                    <div class="change-icon email-icon">
+                        <span class="material-icons-sharp">email</span>
+                    </div>
+                    <div class="change-info">
+                        <p><b>Email Updated</b></p>
+                        <small class="text-muted">2 weeks ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+
+                <div class="action-item">
+                    <div class="action-icon backup-icon">
+                        <span class="material-icons-sharp">backup</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Backup Settings</b></p>
+                        <small class="text-muted">Download a backup</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+
+                <div class="action-item">
+                    <div class="action-icon export-icon">
+                        <span class="material-icons-sharp">upload_file</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Export Data</b></p>
+                        <small class="text-muted">Export all your data</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+
+                <div class="action-item">
+                    <div class="action-icon reset-icon">
+                        <span class="material-icons-sharp">restart_alt</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Reset Preferences</b></p>
+                        <small class="text-muted">Reset to default settings</small>
+                    </div>
+                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../script.js"></script>
 </body>
+
 </html>

@@ -184,8 +184,10 @@
                     </div>
                 </div>
             </div>
+
             <!-- Product Upload & Preview Card -->
-            <div class="cards form-grid">
+            <div class="cards product-upload-overview form-grid">
+                <!-- Product Upload -->
                 <div class="product-upload">
                     <div class="card-header">
                         <div class="header-data">
@@ -201,16 +203,75 @@
                             <h4>Drag & Drop an Image Here</h4>
                             <small class="text-muted">or</small>
                             <div class="upload-button">
-                                <button class="btn-primary">Save Changes</button>
+                                <button class="btn-primary">Browse File</button>
                             </div>
                         </div>
 
                     </div>
 
                 </div>
+                <!-- =======Product Preview============-->
+                <div class="product-preview">
+                    <div class="card-header">
+                        <div class="header-data">
+                            <h2>Product Preview</h2>
+                            <p>This is how your product will appear.</p>
+                        </div>
+                    </div>
+                    <div class="card-body form-grid">
+                        <div class="product-image">
+                            <img src="../../assets/images/Gaming laptop" alt="gamig laptop">
+                        </div>
+                        <div class="preview-info">
+                            <h2>Gaming Laptop X15</h2>
+                            <div class="price-stock">
+                                <h3>$1499.00</h3>
+                                <button>In Stock</button>
+                            </div>
+                            <div class="stars-reviews">
+                                <div class="stars">
+                                    <span class="material-icons-sharp">star</span>
+                                    <span class="material-icons-sharp">star</span>
+                                    <span class="material-icons-sharp">star</span>
+                                    <span class="material-icons-sharp">star</span>
+                                    <span class="material-icons-sharp">star</span>
+                                </div>
+                                <p>(128 Reviews)</p>
+                            </div>
+                            <p>High Performance Gaming Laptop with latest RTX 5090 Graphics Card, 64 GB RAM & 2 TB Gen-5
+                                SSD Especially Designed for Performance & High End Gaming</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
+            <!-- ============Product Description============== -->
+            <div class="cards">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <span class="material-icons-sharp">upload_file</span>
+                    </div>
+                    <div class="header-data">
+                        <h2>Production Description</h2>
+                        <p>Provide a Detailed Description About Your product.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <textarea id="product-description" name="message" rows="4" cols="50">This is the default text inside the textarea.
+                  </textarea>
+                </div>
+                <div class="buttons">
+                    <button class="save-draft">
+                        <span class="material-icons-sharp">upload_file</span>
+                        Save Changes
+                    </button>
+                    <button class="btn-primary">Save Changes</button>
 
+                </div>
+            </div>
 
         </main>
 
@@ -235,132 +296,101 @@
                 </div>
             </div>
 
-            <!-- Account Status -->
-            <div class="account-status">
-                <div class="status-header">
-                    <h3>Account Status</h3>
-                    <span class="badge-premium">Premium</span>
+            <!-- Recently Added Products -->
+            <div class="recent-products">
+                <h3>Recently Added Products</h3>
+
+                <div class="recent-item">
+                    <div class="product-icon">
+                        <img src="../../assets/images/gaming mouse.jfif" alt="gaming-mouse">
+                    </div>
+                    <div class="recent-product-info">
+                        <p><b>Gaming Mouse Pro</b></p>
+                        <small class="text-muted">2 hours ago</small>
+                    </div>
+                    <span class="change-dot success-dot"></span>
                 </div>
 
-                <div class="status-item">
-                    <div class="status-icon plan-icon">
-                        <span class="material-icons-sharp">shield</span>
+                <div class="recent-item">
+                    <div class="product-icon">
+                        <img src="../../assets/images/gaming keyboard.jfif" alt="gaming-keyboard">
                     </div>
-                    <div class="status-info">
-                        <small class="text-muted">Plan</small>
-                        <p><b>Premium Account</b></p>
+                    <div class="recent-product-info">
+                        <p><b>Mechanical Keyboard</b></p>
+                        <small class="text-muted">Yesterday</small>
                     </div>
+                    <span class="change-dot success-dot"></span>
                 </div>
 
-                <div class="status-item">
-                    <div class="status-icon calendar-icon">
-                        <span class="material-icons-sharp">calendar_today</span>
+                <div class="recent-item">
+                    <div class="product-icon">
+                        <img src="../../assets/images/gaming headphone.jfif" alt="gaming-headset">
                     </div>
-                    <div class="status-info">
-                        <small class="text-muted">Active Since</small>
-                        <p><b>15 Jan 2024</b></p>
-                    </div>
-                </div>
-
-                <div class="status-item">
-                    <div class="status-icon storage-icon">
-                        <span class="material-icons-sharp">storage</span>
-                    </div>
-                    <div class="status-info">
-                        <small class="text-muted">Storage Used</small>
-                        <p><b>78%</b></p>
-                        <div class="storage-bar">
-                            <div class="storage-fill" style="width:78%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Recent Changes -->
-            <div class="recent-changes">
-                <h3>Recent Changes</h3>
-
-                <div class="change-item">
-                    <div class="change-icon lock-icon">
-                        <span class="material-icons-sharp">lock</span>
-                    </div>
-                    <div class="change-info">
-                        <p><b>Password Updated</b></p>
+                    <div class="recent-product-info">
+                        <p><b>Gaming Headset X1</b></p>
                         <small class="text-muted">2 days ago</small>
                     </div>
                     <span class="change-dot success-dot"></span>
                 </div>
 
-                <div class="change-item">
-                    <div class="change-icon theme-icon">
-                        <span class="material-icons-sharp">palette</span>
+                <div class="recent-item">
+                    <div class="product-icon">
+                        <img src="../../assets/images/monitor.jfif" alt="curved-monitor">
                     </div>
-                    <div class="change-info">
-                        <p><b>Theme Changed</b></p>
-                        <small class="text-muted">5 days ago</small>
-                    </div>
-                    <span class="change-dot success-dot"></span>
-                </div>
-
-                <div class="change-item">
-                    <div class="change-icon profile-icon">
-                        <span class="material-icons-sharp">person</span>
-                    </div>
-                    <div class="change-info">
-                        <p><b>Profile Updated</b></p>
-                        <small class="text-muted">1 week ago</small>
+                    <div class="recent-product-info">
+                        <p><b>Curved Monitor</b></p>
+                        <small class="text-muted">3 days ago</small>
                     </div>
                     <span class="change-dot success-dot"></span>
                 </div>
 
-                <div class="change-item">
-                    <div class="change-icon email-icon">
-                        <span class="material-icons-sharp">email</span>
-                    </div>
-                    <div class="change-info">
-                        <p><b>Email Updated</b></p>
-                        <small class="text-muted">2 weeks ago</small>
-                    </div>
-                    <span class="change-dot success-dot"></span>
-                </div>
             </div>
 
-            <!-- Quick Actions -->
-            <div class="quick-actions">
-                <h3>Quick Actions</h3>
+            <!--  ============Product Statistics============-->
+            <div class="product-statistics">
+                <h2>Product Statistics</h2>
+
+                <div class="action-item">
+                    <div class="action-icon backup-icon">
+                        <span class="material-icons-sharp haha">backup</span>
+                    </div>
+                    <div class="action-info">
+                        <p><b>Total Products</b></p>
+                    </div>
+                    <h2 class="product-statistics-right"> 2540</h2>
+                </div>
 
                 <div class="action-item">
                     <div class="action-icon backup-icon">
                         <span class="material-icons-sharp">backup</span>
                     </div>
                     <div class="action-info">
-                        <p><b>Backup Settings</b></p>
-                        <small class="text-muted">Download a backup</small>
+                        <p><b>Total Categories</b></p>
                     </div>
-                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                    <h2 class="product-statistics-right"> 20</h2>
                 </div>
 
                 <div class="action-item">
-                    <div class="action-icon export-icon">
-                        <span class="material-icons-sharp">upload_file</span>
+                    <div class="action-icon backup-icon">
+                        <span class="material-icons-sharp">backup</span>
                     </div>
                     <div class="action-info">
-                        <p><b>Export Data</b></p>
-                        <small class="text-muted">Export all your data</small>
+                        <p><b>Out of Stock</b></p>
                     </div>
-                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                    <h2 class="product-statistics-right">42</h2>
                 </div>
 
                 <div class="action-item">
-                    <div class="action-icon reset-icon">
-                        <span class="material-icons-sharp">restart_alt</span>
+                    <div class="action-icon backup-icon">
+                        <span class="material-icons-sharp">backup</span>
                     </div>
                     <div class="action-info">
-                        <p><b>Reset Preferences</b></p>
-                        <small class="text-muted">Reset to default settings</small>
+                        <p><b>Low Stock Items</b></p>
                     </div>
-                    <span class="material-icons-sharp action-arrow">chevron_right</span>
+                    <h2 class="product-statistics-right">36</h2>
                 </div>
+
+                
             </div>
 
 

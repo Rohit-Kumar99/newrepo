@@ -404,7 +404,7 @@ main .message-conversations a {
 }
 
 .active-chat{
-    background:#f5f7ff;
+    /* background:#f5f7ff; */
     border-left:2px solid #4f46e5;
     color:#333;
 }

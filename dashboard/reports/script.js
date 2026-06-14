@@ -42,7 +42,9 @@ themeToggler.addEventListener('click', () => {
     if(document.body.classList.contains('dark-theme-variables')){
         localStorage.setItem('theme', 'dark-theme-variables');
     } else {
+        select_date.style.backgroundColor = "var(--color-light)";
         localStorage.setItem('theme', 'light');
+
     }
 });
    

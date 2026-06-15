@@ -12,6 +12,12 @@
   margin-bottom: 20px;
 }
 
+.logo a img{
+  width:50%;
+  height:50%;
+  /* object-fit: contain; */
+}
+
 .logo h3 {
   font-size: 24px;
   color: purple;
@@ -46,7 +52,7 @@
 .formContainer form input {
   width: 100%;
   height: 40px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border: 1px solid #e1e1e1;
   border-radius: 20px;
   outline: none;
@@ -54,9 +60,11 @@
 
 .formContainer form button {
   background-color: #fff;
+  width:40%;
+  align-self: center;
   color: black;
   font-size: 16px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-radius: 20px;
   border: none;
   outline: none;

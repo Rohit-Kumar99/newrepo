@@ -522,9 +522,9 @@ aside .sidebar .message-count {
   outline:1px solid var(--color-dark-variant);
 }
 /* Working on it */
-.product-image img{
+/* .product-image img{
   mix-blend-mode: multiply;
-}
+} */
 
 .preview-info h2{
   font-size:1.2rem;
@@ -614,7 +614,7 @@ aside .sidebar .message-count {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
 
 .product-icon span { font-size: 1rem; }
